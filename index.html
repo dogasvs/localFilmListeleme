@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Film Listeleme</title>
+  <link rel="stylesheet" href="assets/css/film.css">
+  <script src="assets/js/film.js" defer></script>
+</head>
+<body>
+  
+  <form class="filmForm">
+
+    <div class="film-item">
+      <label for="name" class="name">Film İsmi: </label>
+      <input type="text" name="name" class="name">
+    </div>
+
+    <div class="film-item">
+      <label for="konu" class="konu">Film Konusu: </label>
+      <input type="text" name="konu" class="konu">
+    </div>
+
+    <div class="film-item">
+      <label for="catagory" class="catagory">Film Katagorisi: </label>
+      <select name="catagory" id="catagory">
+        <option selected value="" disabled>Katagori seçiniz</option>
+        <option value="korku">Korku</option>
+        <option value="komedi">Komedi</option>
+        <option value="drama">Drama</option>
+        <option value="aşk">Aşk</option>
+        <option value="aksiyon">Aksiyon</option>
+      </select>
+    </div>
+
+    <div class="film-item">
+      <label for="puan" class="puan">Film Puanı: </label>
+      <input type="number" name="puan" class="puan" min="1" max="10" placeholder="1 ile 10 arası bir puan giriniz">
+    </div>
+
+    <button class="add">Listeye Ekle</button>
+    <button class="delete">Listeyi Silin</button>
+  </form>
+
+  <div class="Listeleme">
+    <h3>Korku Filmleri: </h3>
+    <div class="korku"></div>
+    <h3>Komedi Filmleri: </h3>
+    <div class="komedi"></div>
+    <h3>Drama filmleri</h3>
+    <div class="drama"></div>
+    <h3>Aşk Filmleri: </h3>
+    <div class="ask"></div>
+    <h3>Aksiyon Filmleri:</h3>
+    <div class="aksiyon"></div>
+  </div>
+
+</body>
+</html>
